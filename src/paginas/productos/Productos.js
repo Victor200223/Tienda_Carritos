@@ -26,13 +26,15 @@ function Productos() {
             <HiShoppingCart />
           </Link>
         </span>
-        P
+        P 
         <span className="contador">
-          {Object.keys(carrito).reduce(
-            (previo, actual, index, array) =>
-              carrito[array[index]] ? previo + 1 : previo,
-            0
-          )}
+          <Link to="/Carrito">
+            {Object.keys(carrito).reduce(
+              (previo, actual, index, array) =>
+                carrito[array[index]] ? previo + 1 : previo,
+              0
+            )}
+          </Link>
         </span>
       </h1>
 
