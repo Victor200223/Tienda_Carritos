@@ -42,7 +42,7 @@ const Overlay = styled.div`
   top: 0;
   left: 0;
   background: ${(props) =>
-    props.mostrarOverlay ? `rgba(0, 0, 0, 0.5)` : `rgba(0, 0, 0, 0)`};
+    props.mostrarOverlay ? `rgba(0, 0, 0, 1)` : `rgba(0, 0, 0, 0)`};
   display: flex;
   padding: 40px;
   align-items: ${(props) =>
@@ -56,7 +56,7 @@ const ContenedorModal = styled.div`
   position: relative;
   background: #000;
   border-radius: 5px;
-  box-shadow:#3d0000 -5px -5px 50px 10px;
+  box-shadow: #3d0000 -5px -5px 50px 10px;
   padding: 20px;
 `;
 const EncabezadoModal = styled.div`

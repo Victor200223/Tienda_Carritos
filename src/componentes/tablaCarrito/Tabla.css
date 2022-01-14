@@ -138,4 +138,5 @@ td {
   padding-left: 47px;
   display: flex;
   position: relative;
+  z-index: -1;
 }

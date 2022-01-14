@@ -124,7 +124,14 @@ export const Tabla = () => {
         >
           <Contenido>
             <h1>¡Gracias por tu compra!</h1>
-
+            <p>
+              Total:
+              {Object.values(carrito).reduce(
+                (previo, actual) =>
+                  actual ? previo + actual.cantidad * actual.precio : previo,
+                0
+              )}
+            </p>
             <Boton
               onClick={() => {
                 comprar();
