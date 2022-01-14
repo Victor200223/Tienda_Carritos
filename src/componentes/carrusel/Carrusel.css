@@ -1,0 +1,55 @@
+.contenedorCarrusel {
+  width: 100%;
+
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.contenedorCarrusel ul {
+  display: flex;
+  width: 400%;
+  padding: 0;
+  animation: cambio 10s infinite alternate;
+  animation-timing-function: ease-in;
+}
+.contenedorCarrusel li {
+  list-style: none;
+  width: 100%;
+}
+
+.contenedorCarrusel .img-carrusel {
+  width: 100%;
+  height: max-content;
+}
+.img-carrusel {
+  height: 50%;
+}
+li {
+  height: 90%;
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}

@@ -1,0 +1,14 @@
+.tituloCarrito {
+  color: white;
+}
+.spanCarrito {
+  color: #3d0000;
+}
+.tituloCarrito {
+  width: 100%;
+  text-align: center;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 62px;
+}

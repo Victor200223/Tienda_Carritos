@@ -1,0 +1,41 @@
+.contenedorPaginaProductos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.spamTituloProductos > a {
+  color: #3d0000;
+}
+
+.spamTituloProductos :hover {
+  color: #fff;
+  
+}
+
+.tituloProductos {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 62px;
+  color: #fff;
+  z-index: 3;
+}
+
+.Carrusel {
+  margin-top: 100px;
+}
+.productosContenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  max-width: 100%;
+}
