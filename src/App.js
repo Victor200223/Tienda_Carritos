@@ -20,6 +20,7 @@ function App() {
   });
   useEffect(() => {
     setTimeout(() => {
+      setEstadoModal2(false);
       setEstadoModal3(false);
     }, 1000);
   });
@@ -86,7 +87,7 @@ function App() {
 
   return (
     <div>
-      <CarritoProveedor 
+      <CarritoProveedor
         value={{
           carrito,
           agregarAlCarrito,
@@ -130,12 +131,12 @@ function App() {
         estado={estadoModal2}
         cambiarEstado={setEstadoModal2}
         mostrarOverlay={false}
-        mostrarHeader={true}
+        mostrarHeader={false}
         posicionModal={`start`}
       >
         <Contenido>
           <h1>SHUP</h1>
-          <p>¡Producto Eliminado!</p>
+          <p>¡Producto Eliminadosad!</p>
         </Contenido>
       </Modal>
     </div>

@@ -12,9 +12,19 @@
 
 .spamTituloProductos :hover {
   color: #fff;
-  
 }
-
+.contador {
+  color: #000;
+  font-size: 28px;
+  position: relative;
+  right: 75px;
+  bottom: 31px;
+  z-index: 9999;
+  cursor: pointer;
+}
+.contador:hover {
+  color: #000;
+}
 .tituloProductos {
   position: fixed;
   width: 100%;

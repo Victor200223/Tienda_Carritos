@@ -22,8 +22,6 @@ export const Tabla = () => {
   return (
     <div className="contenedor">
       <div className="contenedorTabla">
-        Total:
-        {  Object.values(carrito).reduce( (previo, actual) => actual ? previo + actual.cantidad * actual.precio : previo, 0   )   }
         <table className="tabla">
           <thead>
             <tr className="tr">
@@ -105,7 +103,6 @@ export const Tabla = () => {
       </div>
 
       <div className="contenedorBotonesCompra">
-        {/* <p style={{ color: "#fff" }}>Total ${Total()}</p> */}
         <button className="seguirComprando">
           <Link to="/">Seguir Comprando</Link>
         </button>
@@ -117,7 +114,6 @@ export const Tabla = () => {
             Compra
           </button>
         </div>
-
         {/*MODAL1.............................................................*/}
         <Modal
           estado={estadoModal1}
@@ -138,6 +134,14 @@ export const Tabla = () => {
             </Boton>
           </Contenido>
         </Modal>
+        <p className="total">
+          Total:
+          {Object.values(carrito).reduce(
+            (previo, actual) =>
+              actual ? previo + actual.cantidad * actual.precio : previo,
+            0
+          )}
+        </p>
       </div>
       {/*MODAL3.............................................................*/}
       <Modal

@@ -24,13 +24,18 @@ function Productos() {
         <span className="spamTituloProductos">
           <Link to="/Carrito">
             <HiShoppingCart />
-            {Object.keys(carrito).reduce((previo, actual, index, array) =>
-              carrito[array[index]] ? previo + 1 : previo, 0
-            )}
           </Link>
         </span>
         P
+        <span className="contador">
+          {Object.keys(carrito).reduce(
+            (previo, actual, index, array) =>
+              carrito[array[index]] ? previo + 1 : previo,
+            0
+          )}
+        </span>
       </h1>
+
       <div className="Carrusel">{<Carrusel />}</div>
       <div id="productos" className="productosContenedor">
         {productosDatos.productos.map((item) => (
